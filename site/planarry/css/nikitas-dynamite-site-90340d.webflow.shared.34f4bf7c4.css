@@ -4258,6 +4258,10 @@ figcaption {
   display: none;
 }
 
+.main-button.prez {
+  display: block;
+}
+
 .menu-link {
   mix-blend-mode: normal;
   margin-right: 20px;
