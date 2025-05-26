@@ -4726,6 +4726,7 @@ figcaption {
   border-radius: 8px;
   padding-left: 20px;
   padding-right: 20px;
+  display: inline-flex;
 }
 
 .div-block-14 {
