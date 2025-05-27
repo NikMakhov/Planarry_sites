@@ -5796,8 +5796,8 @@ figcaption {
 }
 
 .div-block-64 {
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
   flex-flow: column;
   display: flex;
 }
