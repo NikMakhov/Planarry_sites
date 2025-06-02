@@ -4507,7 +4507,7 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 40px;
   margin-right: 40px;
   padding-left: 40px;
@@ -5993,9 +5993,12 @@ figcaption {
 }
 
 .form-2 {
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   flex-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
   justify-content: center;
   align-items: center;
   width: 350px;
@@ -6019,7 +6022,7 @@ figcaption {
   font-size: 5px;
   display: block;
   position: relative;
-  inset: -14% -47% auto auto;
+  inset: -21% -47% auto auto;
 }
 
 .wqeq-copy._234234 {
