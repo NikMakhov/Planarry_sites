@@ -2875,6 +2875,51 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
+.w-checkbox {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  display: block;
+}
+
+.w-checkbox:before {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox:after {
+  content: " ";
+  clear: both;
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox-input {
+  float: left;
+  margin: 4px 0 0 -20px;
+  line-height: normal;
+}
+
+.w-checkbox-input--inputType-custom {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-checked {
+  background-color: #3898ec;
+  background-image: url("../images/custom-checkbox-checkmark.589d534424.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #3898ec;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-focus {
+  box-shadow: 0 0 3px 1px #3898ec;
+}
+
 .w-commerce-commercepaypalcheckoutformcontainer {
   background-color: #f5f5f5;
   width: 100%;
@@ -4470,14 +4515,18 @@ figcaption {
 }
 
 .heading-2 {
+  text-align: left;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .section-6 {
   margin-top: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .div-block-7 {
@@ -4729,6 +4778,10 @@ figcaption {
   display: inline-flex;
 }
 
+.text-field-3.test {
+  display: none;
+}
+
 .div-block-14 {
   z-index: 100;
   mix-blend-mode: normal;
@@ -4946,7 +4999,12 @@ figcaption {
   font-weight: 600;
 }
 
-.bold-text-6, .bold-text-7 {
+.bold-text-6 {
+  font-size: 40px;
+}
+
+.bold-text-7 {
+  text-align: left;
   font-size: 40px;
 }
 
@@ -5598,6 +5656,7 @@ figcaption {
   background-color: #cae5fb;
   padding-top: 40px;
   padding-bottom: 60px;
+  display: none;
 }
 
 .div-block-58 {
@@ -5796,14 +5855,14 @@ figcaption {
 }
 
 .div-block-64 {
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   flex-flow: column;
   display: flex;
 }
 
 .paragraph-5 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .div-block-65 {
@@ -5833,6 +5892,12 @@ figcaption {
   padding-left: 20px;
   padding-right: 20px;
   display: grid;
+}
+
+.div-block-6-copy-copy.tablet {
+  grid-template-rows: 182px;
+  grid-template-columns: 1.25fr;
+  grid-auto-rows: 132px;
 }
 
 .div-block-66 {
@@ -5996,6 +6061,19 @@ figcaption {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
+  display: flex;
+}
+
+.checkbox-label-3 {
+  text-align: left;
+}
+
+.test {
+  display: none;
+}
+
+.div-block-71 {
+  flex-flow: column;
   display: flex;
 }
 
