@@ -2875,49 +2875,8 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
-.w-checkbox {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  display: block;
-}
-
-.w-checkbox:before {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox:after {
-  content: " ";
-  clear: both;
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox-input {
-  float: left;
-  margin: 4px 0 0 -20px;
-  line-height: normal;
-}
-
-.w-checkbox-input--inputType-custom {
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  width: 12px;
-  height: 12px;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  background-image: url("../images/custom-checkbox-checkmark.589d534424.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: #3898ec;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
+.w-form-formrecaptcha {
+  margin-bottom: 8px;
 }
 
 .w-commerce-commercepaypalcheckoutformcontainer {
@@ -5973,7 +5932,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 350px;
+  height: 420px;
   padding: 10px;
   display: flex;
 }
@@ -6078,6 +6037,10 @@ figcaption {
 .div-block-71 {
   flex-flow: column;
   display: flex;
+}
+
+.recaptcha {
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 991px) {
