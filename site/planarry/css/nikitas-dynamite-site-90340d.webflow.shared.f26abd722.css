@@ -4447,12 +4447,14 @@ figcaption {
 
 .button-2 {
   border-radius: 8px;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-left: 20px;
   margin-right: auto;
   padding: 19px;
-  display: inline-flex;
+  display: flex;
 }
 
 .button-2._12312 {
@@ -5485,8 +5487,9 @@ figcaption {
 .div-block-51 {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template: ". ."
+                 ". Area"
+                 / 1fr .75fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -5499,12 +5502,13 @@ figcaption {
 .div-block-53 {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-color: var(--black);
+  background-color: var(--white);
   border-radius: 10px;
   flex-flow: column;
   margin-top: 26px;
   padding: 10px;
   display: flex;
+  box-shadow: 3px 2px 5px #0003;
 }
 
 .image-13 {
@@ -7705,7 +7709,16 @@ figcaption {
   place-self: start center;
 }
 
-#w-node-_7a448873-80d3-e0d2-abb2-6c6704b16e9c-40601f2b, #w-node-_9a9af7f1-db4d-600b-99ee-59574f87d766-40601f2b, #w-node-_2ee3e63a-8816-3cca-7b78-f2f239437c9a-40601f2b, #w-node-_71bd8a20-cea2-12ab-e0ec-48a6e0a40b91-40601f2b, #w-node-_69938870-328c-5467-f435-a81702a8d5f2-40601f2b, #w-node-c0e811a4-86b4-9bbf-45a6-e7b357bca10d-40601f2b, #w-node-c6b312a3-b5b9-7300-6acb-6c0db302efe1-40601f2b, #w-node-c00580f9-a9b1-b672-4993-0ccea9072b00-40601f2b, #w-node-_0088422e-e380-e85e-7f1a-eb4cc380ea4a-40601f2b {
+#w-node-_7a448873-80d3-e0d2-abb2-6c6704b16e9c-40601f2b, #w-node-_9a9af7f1-db4d-600b-99ee-59574f87d766-40601f2b, #w-node-_2ee3e63a-8816-3cca-7b78-f2f239437c9a-40601f2b, #w-node-_71bd8a20-cea2-12ab-e0ec-48a6e0a40b91-40601f2b, #w-node-_69938870-328c-5467-f435-a81702a8d5f2-40601f2b, #w-node-c0e811a4-86b4-9bbf-45a6-e7b357bca10d-40601f2b {
+  place-self: center;
+}
+
+#w-node-d273ccac-eb04-12ad-4349-00f11b618118-40601f2b {
+  grid-area: Area;
+  place-self: stretch center;
+}
+
+#w-node-c6b312a3-b5b9-7300-6acb-6c0db302efe1-40601f2b, #w-node-c00580f9-a9b1-b672-4993-0ccea9072b00-40601f2b, #w-node-_0088422e-e380-e85e-7f1a-eb4cc380ea4a-40601f2b {
   place-self: center;
 }
 
