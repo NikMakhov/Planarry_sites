@@ -4540,6 +4540,11 @@ figcaption {
   box-shadow: 3px 3px 5px #0003;
 }
 
+.button-2.preazz {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .heading-2 {
   text-align: left;
   margin-top: 0;
@@ -6964,6 +6969,17 @@ figcaption {
   align-items: center;
   min-width: 367px;
   display: flex;
+}
+
+.div-block-97 {
+  grid-column-gap: 37px;
+  grid-row-gap: 37px;
+  flex-flow: column;
+  display: flex;
+}
+
+.success-message-2 {
+  background-color: #ddd0;
 }
 
 @media screen and (max-width: 991px) {
