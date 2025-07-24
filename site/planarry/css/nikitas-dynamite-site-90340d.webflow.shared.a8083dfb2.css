@@ -4263,10 +4263,11 @@ figcaption {
 }
 
 .main-button.prez {
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  width: 350px;
   margin-top: 0;
-  display: none;
+  display: flex;
 }
 
 .menu-link {
@@ -4483,7 +4484,7 @@ figcaption {
   align-items: center;
   width: 290px;
   padding: 20px;
-  display: flex;
+  display: none;
 }
 
 .button-2.prez._123123 {
@@ -4543,6 +4544,10 @@ figcaption {
 .button-2.preazz {
   margin-left: auto;
   margin-right: auto;
+}
+
+.button-2.prez22 {
+  width: 300px;
 }
 
 .heading-2 {
