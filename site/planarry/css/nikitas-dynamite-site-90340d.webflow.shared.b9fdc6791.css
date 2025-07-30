@@ -4484,7 +4484,7 @@ figcaption {
   align-items: center;
   width: 290px;
   padding: 20px;
-  display: none;
+  display: flex;
 }
 
 .button-2.prez._123123 {
@@ -4548,6 +4548,7 @@ figcaption {
 
 .button-2.prez22 {
   width: 300px;
+  display: none;
 }
 
 .heading-2 {
@@ -6170,6 +6171,10 @@ figcaption {
   display: none;
 }
 
+.phopecall.download {
+  display: none;
+}
+
 .fprmtocall {
   background-color: #f2f2f2;
   border-radius: 12px;
@@ -6251,7 +6256,9 @@ figcaption {
   font-size: 5px;
   display: block;
   position: relative;
-  inset: -149% -47% auto auto;
+  top: -359%;
+  bottom: auto;
+  left: 161px;
 }
 
 .wqeq-copy._234234 {
@@ -6979,12 +6986,42 @@ figcaption {
 .div-block-97 {
   grid-column-gap: 37px;
   grid-row-gap: 37px;
+  background-color: #f2f2f2;
   flex-flow: column;
   display: flex;
 }
 
 .success-message-2 {
   background-color: #ddd0;
+}
+
+.div-block-98 {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: none;
+  position: fixed;
+}
+
+.download {
+  background-color: var(--white);
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: fixed;
+  inset: 37% 0% 0%;
+}
+
+.text-block-44 {
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
