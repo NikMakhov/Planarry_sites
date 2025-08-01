@@ -4484,7 +4484,7 @@ figcaption {
   align-items: center;
   width: 290px;
   padding: 20px;
-  display: flex;
+  display: none;
 }
 
 .button-2.prez._123123 {
@@ -4548,7 +4548,7 @@ figcaption {
 
 .button-2.prez22 {
   width: 300px;
-  display: none;
+  display: flex;
 }
 
 .heading-2 {
