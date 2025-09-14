@@ -4541,6 +4541,10 @@ figcaption {
   box-shadow: 3px 3px 5px #0003;
 }
 
+.button-2.mobcall {
+  display: none;
+}
+
 .button-2.preazz {
   margin-left: auto;
   margin-right: auto;
@@ -4642,8 +4646,8 @@ figcaption {
 
 .navbar-2 {
   z-index: 50;
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
+  grid-column-gap: 26px;
+  grid-row-gap: 26px;
   background-color: var(--white);
   -webkit-text-stroke-color: #8ca1f5;
   justify-content: center;
@@ -4655,11 +4659,14 @@ figcaption {
 }
 
 .nav-menu {
+  grid-column-gap: 31px;
+  grid-row-gap: 31px;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 0;
   font-weight: 500;
   display: flex;
 }
@@ -6028,8 +6035,8 @@ figcaption {
 }
 
 .div-block-65.mobil {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -6278,7 +6285,7 @@ figcaption {
   margin-left: 10px;
   display: block;
   position: absolute;
-  inset: 10px 25% auto auto;
+  inset: -3px -13% auto auto;
 }
 
 .wqeq-copy.prez {
