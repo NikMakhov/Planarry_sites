@@ -4659,8 +4659,8 @@ figcaption {
 }
 
 .nav-menu {
-  grid-column-gap: 31px;
-  grid-row-gap: 31px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   justify-content: center;
   align-items: center;
   max-width: 1140px;
