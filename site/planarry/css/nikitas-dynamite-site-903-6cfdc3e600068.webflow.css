@@ -2421,6 +2421,7 @@ figcaption {
   align-items: center;
   width: 210px;
   margin-top: 0;
+  margin-left: 60px;
   padding: 20px;
   font-weight: 500;
   transition: box-shadow .45s cubic-bezier(.848, .27, .68, .53);
@@ -2634,7 +2635,8 @@ figcaption {
   grid-row-gap: 26px;
   background-color: var(--white);
   -webkit-text-stroke-color: #8ca1f5;
-  justify-content: space-around;
+  flex: 1;
+  justify-content: space-between;
   align-items: center;
   max-width: 1140px;
   margin: 20px auto 60px;
@@ -2648,8 +2650,8 @@ figcaption {
   justify-content: center;
   align-items: center;
   max-width: 1140px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-right: 0;
   font-weight: 500;
   display: flex;
@@ -5176,6 +5178,7 @@ figcaption {
 }
 
 .contact {
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5210,7 +5213,13 @@ figcaption {
   margin-right: auto;
 }
 
-.div-block-109, .div-block-110 {
+.div-block-109 {
+  flex-flow: column;
+  max-width: 1140px;
+  display: flex;
+}
+
+.div-block-110 {
   flex-flow: column;
   display: flex;
 }
