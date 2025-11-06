@@ -2417,11 +2417,10 @@ figcaption {
   border-radius: 8px;
   flex-flow: row;
   justify-content: center;
+  align-self: center;
   align-items: center;
   width: 210px;
   margin-top: 0;
-  margin-left: 0;
-  margin-right: auto;
   padding: 20px;
   font-weight: 500;
   transition: box-shadow .45s cubic-bezier(.848, .27, .68, .53);
@@ -2608,6 +2607,8 @@ figcaption {
 }
 
 .brand-3 {
+  flex: none;
+  order: 0;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 0;
@@ -2633,7 +2634,7 @@ figcaption {
   grid-row-gap: 26px;
   background-color: var(--white);
   -webkit-text-stroke-color: #8ca1f5;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   max-width: 1140px;
   margin: 20px auto 60px;
@@ -2642,13 +2643,13 @@ figcaption {
 }
 
 .nav-menu {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   justify-content: center;
   align-items: center;
   max-width: 1140px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-right: 0;
   font-weight: 500;
   display: flex;
@@ -2668,17 +2669,20 @@ figcaption {
 .nav-lik {
   color: #171717;
   text-align: left;
+  background-color: #0000;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 5px;
   font-weight: 600;
+  transition: color .2s, box-shadow .355s ease-in;
   overflow: visible;
+  box-shadow: 0 4px #0000;
 }
 
 .nav-lik:hover {
   opacity: 1;
   color: #022c58;
+  box-shadow: 0 4px #0f5ba8e8;
 }
 
 .nav-lik:active {
@@ -4026,10 +4030,11 @@ figcaption {
 }
 
 .div-block-65.mobil {
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   flex-flow: row;
-  justify-content: flex-start;
+  flex: 1;
+  justify-content: space-between;
   align-items: center;
 }
 
