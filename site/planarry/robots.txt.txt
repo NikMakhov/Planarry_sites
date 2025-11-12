@@ -1,4 +1,18 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /test/
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
 
 Sitemap: https://planarry.com/sitemap.xml
+Host: planarry.com

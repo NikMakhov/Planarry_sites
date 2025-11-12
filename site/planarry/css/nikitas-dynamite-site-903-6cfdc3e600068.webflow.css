@@ -5491,15 +5491,16 @@ figcaption {
   grid-row-gap: 30px;
   flex-flow: row;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-self: flex-start;
-  align-items: center;
+  place-items: start stretch;
   max-width: 1140px;
   margin-left: 0;
   margin-right: 0;
-  display: flex;
+  display: grid;
 }
 
 .div-block-116 {
@@ -5507,6 +5508,7 @@ figcaption {
   grid-row-gap: 12px;
   flex-flow: column;
   justify-content: flex-start;
+  align-self: center;
   align-items: flex-start;
   display: flex;
 }
@@ -5514,6 +5516,7 @@ figcaption {
 .link-block-4 {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  color: #3a3b3d;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -5523,9 +5526,11 @@ figcaption {
 
 .linkblogg {
   text-align: left;
+  align-self: flex-start;
   font-family: Montserrat, sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 130%;
   position: static;
 }
 
@@ -5534,7 +5539,8 @@ figcaption {
 }
 
 .image-29 {
-  width: 400px;
+  align-self: stretch;
+  max-width: 90%;
 }
 
 .div-block-117 {
@@ -5563,6 +5569,10 @@ figcaption {
   text-decoration: none;
 }
 
+.link-block-5:hover {
+  color: #0f5ba8;
+}
+
 .div-block-118 {
   max-width: 1140px;
   margin-left: auto;
@@ -5576,9 +5586,16 @@ figcaption {
 }
 
 .div-block-119 {
+  grid-column-gap: 17px;
+  grid-row-gap: 18px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-items: center;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
 }
 
 .heading-14 {
@@ -5586,6 +5603,8 @@ figcaption {
 }
 
 .div-block-120 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   flex-flow: column;
   max-width: 1140px;
   margin-left: auto;
@@ -5600,6 +5619,41 @@ figcaption {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.bold-text-28, .bold-text-29, .bold-text-30 {
+  font-weight: 600;
+}
+
+.link-4 {
+  text-decoration: underline;
+}
+
+.image-30 {
+  max-width: 100%;
+}
+
+.heading-15 {
+  font-size: 40px;
+}
+
+.link-5 {
+  color: #031640;
+  text-decoration: none;
+}
+
+.link-6 {
+  color: #031683;
+  text-decoration: none;
+}
+
+.heading-16 {
+  font-size: 40px;
+}
+
+.link-7 {
+  color: #081738;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -8091,7 +8145,15 @@ figcaption {
   place-self: start center;
 }
 
-#w-node-_7a448873-80d3-e0d2-abb2-6c6704b16e9c-82a8593d, #w-node-_9a9af7f1-db4d-600b-99ee-59574f87d766-82a8593d, #w-node-_2ee3e63a-8816-3cca-7b78-f2f239437c9a-82a8593d, #w-node-_71bd8a20-cea2-12ab-e0ec-48a6e0a40b91-82a8593d, #w-node-_69938870-328c-5467-f435-a81702a8d5f2-82a8593d, #w-node-c0e811a4-86b4-9bbf-45a6-e7b357bca10d-82a8593d, #w-node-_34bd6b33-cf66-55d6-d3bd-2ac7ab838baa-82a8593d, #w-node-fb203431-ae2c-cf7b-feb0-92c3a10ab2d0-82a8593d, #w-node-c6b312a3-b5b9-7300-6acb-6c0db302efe1-82a8593d, #w-node-c00580f9-a9b1-b672-4993-0ccea9072b00-82a8593d, #w-node-_0088422e-e380-e85e-7f1a-eb4cc380ea4a-82a8593d {
+#w-node-_7a448873-80d3-e0d2-abb2-6c6704b16e9c-82a8593d, #w-node-_9a9af7f1-db4d-600b-99ee-59574f87d766-82a8593d, #w-node-_2ee3e63a-8816-3cca-7b78-f2f239437c9a-82a8593d, #w-node-_71bd8a20-cea2-12ab-e0ec-48a6e0a40b91-82a8593d, #w-node-_69938870-328c-5467-f435-a81702a8d5f2-82a8593d, #w-node-c0e811a4-86b4-9bbf-45a6-e7b357bca10d-82a8593d, #w-node-_34bd6b33-cf66-55d6-d3bd-2ac7ab838baa-82a8593d {
+  place-self: center;
+}
+
+#w-node-fb203431-ae2c-cf7b-feb0-92c3a10ab2d0-82a8593d {
+  place-self: start center;
+}
+
+#w-node-c6b312a3-b5b9-7300-6acb-6c0db302efe1-82a8593d, #w-node-c00580f9-a9b1-b672-4993-0ccea9072b00-82a8593d, #w-node-_0088422e-e380-e85e-7f1a-eb4cc380ea4a-82a8593d {
   place-self: center;
 }
 
@@ -8102,6 +8164,10 @@ figcaption {
 #w-node-_35f02a23-b806-a431-4e10-8b72de875d7f-82a85941, #w-node-_5783b3fc-2e65-1c82-2924-e65309a96994-82a85941 {
   grid-area: span 1 / span 1 / span 1 / span 1;
   place-self: auto;
+}
+
+#w-node-b22baf31-3939-ab62-1cd2-6e292a1f697c-c857943d {
+  place-self: center;
 }
 
 @media screen and (max-width: 991px) {
