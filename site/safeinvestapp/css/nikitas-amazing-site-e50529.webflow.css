@@ -958,6 +958,8 @@ p {
   background-color: #454547;
   padding-top: 42px;
   padding-bottom: 42px;
+  position: absolute;
+  inset: auto 0% -7%;
 }
 
 .section.footer.copyright {
@@ -966,6 +968,8 @@ p {
   padding-top: 19px;
   padding-bottom: 19px;
   font-size: 14px;
+  position: absolute;
+  inset: auto 0% -10%;
 }
 
 .section.purple {
