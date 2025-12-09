@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 08:39:18 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 09:01:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6901e0f47f0be8b1e8ac45db" data-wf-site="6901e0f37f0be8b1e8ac4564" lang="en">
 <head>
   <meta charset="utf-8">
@@ -39,10 +39,10 @@
                         <option value="Будівельний">Будівельний</option>
                         <option value="Ритейл">Ритейл</option>
                       </select><input type="submit" data-wait="Please wait..." class="button modal12 w-button" value="Відправити"></form>
-                    <div class="w-form-done">
+                    <div id="form-success" class="form-success w-form-done">
                       <div>Thank you! Your submission has been received!</div>
                     </div>
-                    <div class="w-form-fail">
+                    <div id="form-error" class="form-error w-form-fail">
                       <div>Oops! Something went wrong while submitting the form.</div>
                     </div>
                   </div>
@@ -285,7 +285,7 @@
           <a href="commercial-offer.html" class="nav-link w-nav-link">Комерційна пропозиція</a>
           <a href="contact.html" class="nav-link w-nav-link">Контакти</a>
           <a href="blog.html" class="nav-link w-nav-link">Блог</a>
-          <a href="#" class="button recall">Зворотній дзвінок</a>
+          <a href="#" data-w-id="05663f47-d883-b14e-956b-e1ccfb056807" class="button recall">Зворотній дзвінок</a>
         </nav>
         <div class="nav-link menu w-nav-button">
           <div class="w-icon-nav-menu"></div>
@@ -295,15 +295,15 @@
         <div class="modal1 _4242">
           <h1 class="heading-8">Форма заявки</h1>
           <div class="form-block-2 w-form">
-            <form method="get" data-emailjs="true" data-template-id="template_service_lh49qkj" name="wf-form-phone" data-name="phone" data-service-id="service_service_lh49qkj" id="wf-form-phone" class="form-2" data-wf-page-id="6901e0f47f0be8b1e8ac45db" data-wf-element-id="4edac9b1-7fce-d2a6-00d4-cab2af82bbc3"><input class="text-field-2 w-input" maxlength="256" name="name" data-name="name" placeholder="Ваше ім&#x27;я" type="text" id="name" required=""><input class="text-field-2 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Ваш телефон" type="tel" id="Phone" required=""><input type="submit" data-wait="Please wait..." class="button modal12 w-button" value="Відправити"></form>
-            <div class="w-form-done">
+            <form method="get" data-emailjs="true" data-template-id="template_service_lh49qkj" name="wf-form-phone" data-name="phone" data-service-id="service_service_lh49qkj" id="call-phone" class="form-2" data-wf-page-id="6901e0f47f0be8b1e8ac45db" data-wf-element-id="05663f47-d883-b14e-956b-e1ccfb056810"><input class="text-field-2 w-input" maxlength="256" name="name" data-name="name" placeholder="Ваше ім&#x27;я" type="text" id="name" required=""><input class="text-field-2 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Ваш телефон" type="tel" id="Phone" required=""><input type="submit" data-wait="Please wait..." class="button modal12 w-button" value="Відправити"></form>
+            <div class="form-success w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
-            <div class="w-form-fail">
+            <div id="form-error-1" class="form-error w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
           </div>
-          <div class="div-block-28"><img loading="lazy" src="images/free-icon-close-2976286.png" alt="" class="image-11"></div>
+          <div data-w-id="05663f47-d883-b14e-956b-e1ccfb05681a" class="div-block-28"><img src="images/free-icon-close-2976286.png" loading="lazy" alt="" class="image-11"></div>
         </div>
       </div>
     </div>
@@ -313,32 +313,42 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
 (function() {
-    emailjs.init("7luhkMhCE_B0bgIv0"); // ← вставить Public Key
+    emailjs.init("7luhkMhCE_B0bgIv0"); // ← Вставить Public Key
 })();
 document.addEventListener("DOMContentLoaded", function () {
-    // Находим все формы по атрибуту data-emailjs="true"
     const forms = document.querySelectorAll("form[data-emailjs='true']");
     forms.forEach(function(form) {
         const templateId = form.getAttribute("data-template-id");
         const serviceId = form.getAttribute("data-service-id");
         form.addEventListener("submit", function (e) {
             e.preventDefault();
-            const formData = new FormData(form);
-            const fields = {};
-            formData.forEach((value, key) => fields[key] = value);
-            emailjs.send(serviceId, templateId, fields)
+            // === 1. Получаем список полей из EmailJS Template ===
+            fetch(`https://api.emailjs.com/api/v1.0/templates/${templateId}`)
+                .then(response => response.json())
+                .then(templateData => {
+                    const templateFields = templateData.fields; 
+                    const formData = new FormData(form);
+                    const payload = {};
+                    // === 2. Заполняем только те поля, которые существуют в шаблоне ===
+                    templateFields.forEach(field => {
+                        payload[field] = formData.get(field) || "";
+                    });
+                    // === 3. Отправляем в EmailJS ===
+                    return emailjs.send(serviceId, templateId, payload);
+                })
                 .then(() => {
-                    const successMsg = form.querySelector(".form-success");
-                    const errorMsg = form.querySelector(".form-error");
-                    if (successMsg) successMsg.style.display = "block";
-                    if (errorMsg) errorMsg.style.display = "none";
+                    const success = form.querySelector(".form-success");
+                    const error = form.querySelector(".form-error");
+                    if (success) success.style.display = "block";
+                    if (error) error.style.display = "none";
                     form.reset();
                 })
-                .catch(() => {
-                    const successMsg = form.querySelector(".form-success");
-                    const errorMsg = form.querySelector(".form-error");
-                    if (successMsg) successMsg.style.display = "none";
-                    if (errorMsg) errorMsg.style.display = "block";
+                .catch((err) => {
+                    console.error("EmailJS ERROR:", err);
+                    const success = form.querySelector(".form-success");
+                    const error = form.querySelector(".form-error");
+                    if (success) success.style.display = "none";
+                    if (error) error.style.display = "block";
                 });
         });
     });
