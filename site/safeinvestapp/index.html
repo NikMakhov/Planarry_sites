@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 15:46:40 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 15:58:29 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6901e0f47f0be8b1e8ac45db" data-wf-site="6901e0f37f0be8b1e8ac4564" lang="en">
 <head>
   <meta charset="utf-8">
@@ -39,10 +39,16 @@
                         <option value="Будівельний">Будівельний</option>
                         <option value="Ритейл">Ритейл</option>
                       </select><input type="submit" data-wait="Please wait..." class="button modal12 w-button" value="Відправити"></form>
-                    <div class="form-success w-form-done">
+                    <div class="form-success">
                       <div>Thank you! Your submission has been received!</div>
                     </div>
+                    <div class="form-success w-form-done">
+                      <div>1Thank you! Your submission has been received!</div>
+                    </div>
                     <div class="form-error w-form-fail">
+                      <div>1Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                    <div class="form-error">
                       <div>Oops! Something went wrong while submitting the form.</div>
                     </div>
                   </div>
@@ -302,6 +308,12 @@
             <div class="form-error w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
+            <div class="form-error">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+            <div class="form-success">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
           </div>
           <div data-w-id="ea3e8068-ead8-edba-eef3-42eedd9803c2" class="div-block-28"><img loading="lazy" src="images/free-icon-close-2976286.png" alt="" class="image-11"></div>
         </div>
@@ -313,11 +325,11 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
 (function() {
-    emailjs.init("7luhkMhCE_B0bgIv0"); 
+    emailjs.init("7luhkMhCE_B0bgIv0");
 })();
 document.addEventListener("DOMContentLoaded", function () {
-    // Находим все формы, у которых включена отправка через EmailJS
-    const forms = document.querySelectorAll("form[data-emailjs='true']");
+    // Выбираем все формы на странице
+    const forms = document.querySelectorAll("form");
     forms.forEach(function(form) {
         const templateId = form.getAttribute("data-template-id") || "template_5lkmmmo";
         const serviceId = form.getAttribute("data-service-id") || "service_lh49qkj";
@@ -336,7 +348,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (error) error.style.display = "none";
                     form.reset();
                 })
-                .catch(function () {
+                .catch(function (err) {
+                    console.error("EmailJS Error:", err);
                     const success = form.querySelector(".form-success");
                     const error = form.querySelector(".form-error");
                     if (success) success.style.display = "none";

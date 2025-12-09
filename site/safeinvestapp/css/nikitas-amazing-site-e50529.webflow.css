@@ -2617,6 +2617,10 @@ p {
   display: grid;
 }
 
+.form-error {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .button.in-pricing {
     font-size: 14px;
