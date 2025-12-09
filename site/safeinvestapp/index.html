@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 14:28:10 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Dec 09 2025 14:59:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6901e0f47f0be8b1e8ac45db" data-wf-site="6901e0f37f0be8b1e8ac4564" lang="en">
 <head>
   <meta charset="utf-8">
@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         payload[field] = formData.get(field) || "";
                     });
                     // === 3. Отправляем в EmailJS ===
-                    return emailjs.send(serviceId, templateId, payload);
+                    return emailjs.send(service_lh49qkj, template_5lkmmmo, payload);
                 })
                 .then(() => {
                     const success = form.querySelector(".form-success");
