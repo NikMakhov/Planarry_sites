@@ -968,7 +968,7 @@ p {
   padding-top: 19px;
   padding-bottom: 19px;
   font-size: 14px;
-  position: relative;
+  position: absolute;
   inset: auto 0% -10%;
 }
 
@@ -2617,7 +2617,7 @@ p {
   display: grid;
 }
 
-.form-error {
+.form-success, .form-error, .div-block-34, .div-block-35 {
   display: none;
 }
 
