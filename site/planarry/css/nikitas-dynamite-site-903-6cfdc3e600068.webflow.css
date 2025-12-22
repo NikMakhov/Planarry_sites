@@ -4456,7 +4456,6 @@ figcaption {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 0;
-  font-weight: 400;
   display: flex;
 }
 
@@ -5779,14 +5778,6 @@ figcaption {
 .image-31 {
   border-radius: 10px;
   max-height: 92%;
-}
-
-.bold-text-31 {
-  margin-right: 10px;
-}
-
-.text-block-48 {
-  margin-left: 8px;
 }
 
 @media screen and (max-width: 991px) {
@@ -7303,6 +7294,11 @@ figcaption {
     margin-right: auto;
   }
 
+  .button-2._554422._25555 {
+    width: 280px;
+    height: 90px;
+  }
+
   .heading-2 {
     margin-left: auto;
     margin-right: auto;
@@ -7313,6 +7309,10 @@ figcaption {
   .section-6 {
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+
+  .section-6.spivpracy {
+    max-width: 100%;
   }
 
   .div-block-11 {
@@ -7790,9 +7790,18 @@ figcaption {
     padding-right: 10px;
   }
 
+  .div-block-53._5675 {
+    width: auto;
+    max-width: 98%;
+  }
+
   .image-13 {
     align-self: flex-start;
     margin-right: 10px;
+  }
+
+  .div-block-54 {
+    flex-flow: column;
   }
 
   .div-block-56 {
@@ -8402,6 +8411,7 @@ figcaption {
   }
 
   .div-block-114 {
+    max-width: 98%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -8415,11 +8425,25 @@ figcaption {
   }
 
   .div-block-117 {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
     flex-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    place-items: center;
+    max-width: 98%;
+  }
+
+  .div-block-117._12467 {
+    align-self: center;
   }
 
   .text-block-47 {
     margin-bottom: 40px;
+  }
+
+  .image-31 {
+    display: none;
   }
 }
 
