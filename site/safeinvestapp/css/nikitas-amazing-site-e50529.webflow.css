@@ -968,7 +968,7 @@ p {
   padding-top: 19px;
   padding-bottom: 19px;
   font-size: 14px;
-  position: relative;
+  position: absolute;
   inset: auto 0% -10%;
 }
 
@@ -2615,6 +2615,10 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: grid;
+}
+
+.form-success, .form-error, .div-block-34, .div-block-35 {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
