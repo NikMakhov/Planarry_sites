@@ -1,0 +1,25 @@
+# robots.txt for safeinvestapp.com
+# SEO‑friendly crawl control for search engines
+
+User-agent: *
+Allow: /
+
+# Block unnecessary or admin sections (if exist)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /settings/
+
+# Block search parameters (prevent duplicates)
+Disallow: /*?*
+Disallow: /*&*
+
+# Allow assets
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemap (add when sitemap.xml is created)
+Sitemap: https://safeinvestapp.com/sitemap.xml

@@ -1025,7 +1025,7 @@ p {
   flex: 1;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 120px;
+  margin-left: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: Roboto, sans-serif;
@@ -2270,6 +2270,7 @@ p {
 }
 
 .text-block-10 {
+  color: #333;
   font-size: 20px;
   line-height: 140%;
 }
@@ -2619,6 +2620,28 @@ p {
 
 .form-success, .form-error, .div-block-34, .div-block-35 {
   display: none;
+}
+
+.text-block-13 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bold-text-3 {
+  letter-spacing: .5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.bold-text-3._12455 {
+  color: #333;
+}
+
+.link-3 {
+  color: #313131;
+  letter-spacing: 1px;
+  line-height: 120%;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
