@@ -2675,8 +2675,8 @@ figcaption {
 }
 
 .nav-menu {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   justify-content: center;
   align-items: center;
   max-width: 1140px;
@@ -4258,11 +4258,7 @@ figcaption {
   display: none;
 }
 
-.phopecall.state2._1231444 {
-  display: flex;
-}
-
-.phopecall.download {
+.phopecall.state2._1231444, .phopecall.download {
   display: none;
 }
 
