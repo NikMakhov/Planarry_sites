@@ -1,18 +1,50 @@
+# =====================================================
+# robots.txt for https://www.planarry.com/
+# Purpose: SEO-friendly crawling & indexing
+# Project: Planarry — TMS SaaS
+# =====================================================
+
+# --- GLOBAL RULES ---
 User-agent: *
+Allow: /
+
+# --- BLOCK TECHNICAL & SERVICE PATHS ---
+# Admin / system
 Disallow: /admin/
-Disallow: /dashboard/
 Disallow: /login/
-Disallow: /signup/
-Disallow: /cart/
-Disallow: /checkout/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /settings/
+
+# Webflow / CMS service paths (if used)
+Disallow: /cms/
+Disallow: /.wf/
+Disallow: /.webflow/
+Disallow: /_next/
+Disallow: /api/
+
+# Internal search & parameters
+Disallow: /search
+Disallow: /*?*
+Disallow: /*&*
+
+# Temporary / test pages
 Disallow: /test/
-Allow: /
+Disallow: /dev/
+Disallow: /tmp/
 
-User-agent: Googlebot-Image
-Allow: /
+# --- ALLOW IMPORTANT FILES ---
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
 
-User-agent: AdsBot-Google
-Allow: /
+# --- SITEMAP ---
+Sitemap: https://www.planarry.com/sitemap.xml
 
-Sitemap: https://planarry.com/sitemap.xml
-Host: planarry.com
+# --- OPTIONAL: CRAWL DELAY (usually NOT needed) ---
+# Crawl-delay: 10
+
+# =====================================================
+# End of robots.txt
+# =====================================================

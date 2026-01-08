@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- BLOG INDEX -->
+
+  <url>
+    <loc>https://www.planarry.com/blog</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://www.planarry.com/blog" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.planarry.com/en/blog" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.planarry.com/ru/blog" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.planarry.com/blog" />
+
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG ARTICLE: ROUTE OPTIMIZATION -->
+
+  <url>
+    <loc>https://www.planarry.com/blog/logistics-route-optimization</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://www.planarry.com/blog/logistics-route-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.planarry.com/en/blog/logistics-route-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.planarry.com/ru/blog/logistics-route-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.planarry.com/blog/logistics-route-optimization" />
+
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BLOG ARTICLE: TMS BENEFITS -->
+
+  <url>
+    <loc>https://www.planarry.com/blog/tms-system-benefits</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://www.planarry.com/blog/tms-system-benefits" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.planarry.com/en/blog/tms-system-benefits" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.planarry.com/ru/blog/tms-system-benefits" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.planarry.com/blog/tms-system-benefits" />
+
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BLOG ARTICLE: LAST MILE -->
+
+  <url>
+    <loc>https://www.planarry.com/blog/last-mile-delivery-optimization</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://www.planarry.com/blog/last-mile-delivery-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.planarry.com/en/blog/last-mile-delivery-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.planarry.com/ru/blog/last-mile-delivery-optimization" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.planarry.com/blog/last-mile-delivery-optimization" />
+
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
